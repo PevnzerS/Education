@@ -15,7 +15,10 @@ while True:
     k += 1
     if input('Вы хотите продолжить? [Д/Н] ').lower() != 'д':
         break
+
+print('Готовая структура: ')
 print(my_list)
+
 my_dict1 = {}
 my_dict1['Название'] = []
 my_dict1['Цена'] = []
@@ -26,10 +29,5 @@ for i in my_list:
     my_dict1['Цена'].append(i[1]['Цена'])
     my_dict1['Количество'].append(i[1]['Количество'])
     my_dict1['Ед. измерения'].append(i[1]['Ед. измерения'])
+print('Аналитика по товарам: ')
 print(my_dict1)
-
-
-
-
-
-
